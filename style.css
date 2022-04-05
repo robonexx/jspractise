@@ -129,13 +129,3 @@ footer {
     justify-content: center;
 }
 
-.img {
-    margin: auto;
-    width: 600px;
-    height: 400px;
-    background-image: url('/LockerLegendsLogo1.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    object-fit: cover;
-    object-position: center;
-}
