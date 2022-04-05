@@ -1,8 +1,7 @@
 console.log('page 2');
-
 const submit = document.querySelector('.submit');
-
-let age = null;
+const html = document.querySelector('.showResult');
+const form = document.getElementById('form');
 
 let men = 0;
 let mensAge = 0;
@@ -40,10 +39,34 @@ Average age of women = ${womensAge}
 Total other genders = ${others}
 Average age of Others = ${othersAge}
 `);
+
+  let averageAgeMan = mensAge / men;
+  let averageAgeWoman = womensAge / women;
+  let averageAgeOthers = othersAge / others;
+
+  const newResult = `
+  <div class="men">
+  <h3>Result for Men</h3>
+    <h4>Total men = ${men}</h4>
+    <h4>Average age of men = ${averageAgeMan}</h4>
+    </div>
+    <div class="women">
+    <h3>Result for Women</h3>
+    <h4>Total women = ${women}</h4>
+    <h4>Average age of women = ${averageAgeWoman}</h4>
+    </div>
+    <div class="others">
+    <h3>Result for Others</h3>
+    <h4>Total other genders = ${others}</h4>
+    <h4>Average age of Others = ${averageAgeOthers}</h4>
+    </div>
+    `;
+
+  html.innerHTML = newResult;
+
+  form.reset();
   return men, mensAge, women, womensAge, others, othersAge;
 });
-
-men = men;
 
 /* 
 let allCheck = document.getElementsByName('radio');
