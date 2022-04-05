@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="nav.js" defer></script>
-    <title>Window scroll</title>
+    <title>Js practise</title>
 </head>
 <body>
     <header class="header">
@@ -19,9 +19,21 @@
             <li><a href="/page3.html">test 2</a></li>
         </ul>
     </div>
+    <div id="modal">
+        <h2>Please enter a name</h2>
+        <form id="form">
+            <div class="inputField">
+                <label for="name">Name: </label>
+                <input type="text" id="uName" class="uName" placeholder="Enter name...">
+            </div>
+            <h4>is this the right name: <span class="nameInput"></span></h4>
+            <input type="submit" id="formSubmit" value="Submit">
+        </form>
+    </div>
     <main class="wrapper">
         <div class="hero">
             <h1>HERO</h1> 
+            <h2 id="welcome"></h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, nostrum?</p>
             <button class="btnReadMore">Read More...</button>
         </div>
