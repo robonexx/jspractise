@@ -24,5 +24,3 @@ btnScrollToBottom.addEventListener('click', () => {
     document.body.scrollHeight || document.documentElement.scrollHeight
   );
 });
-
-
