@@ -12,6 +12,53 @@ body {
     scroll-behavior: smooth;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1 {
+    padding: 1rem 4rem;
+}
+
+.headline {
+    color: white;
+    text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.966);
+}
+
+nav {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+    padding: 1rem 4rem;
+    display: flex;
+}
+
+li {
+    padding: 1rem 3rem;
+    background-color: #333;
+    border-radius: 50px;
+    margin-left: 2rem;
+}
+li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+
+
 main {
     margin: 0 auto;
     height: 100%;
@@ -127,5 +174,29 @@ footer {
     display: flex;
     align-self: center;
     justify-content: center;
+}
+
+form {
+    margin: 0 auto;
+    background-color: #888;
+    height: 100%;
+    width: 800px;
+}
+
+.gender, 
+.age,
+.submit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input,label {
+    padding: 0.25rem 0.5rem;
+    margin: 1rem 0;
+}
+
+input[type="radio"] {
+    
 }
 

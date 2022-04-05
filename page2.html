@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Window scroll</title>
+</head>
+<body>
+    <header>
+        <h1>logo</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/page2.html">test 1</a></li>
+                <li><a href="/page3.html">test 2</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="wrapper">
+        <h1 class="headline">Räkna ut medelvärden på ålder och kön</h1>
+
+        <form class="form" id="form">
+            <h2>Här kan du ange kön och ålder</h2>
+            <div class="age">
+                <input type="number" name="age" id="age" min="0" max="120">
+                <label for="age">Age</label><br>
+            </div>
+            <div class="gender">
+            <input type="radio" name="gender" value="Man">
+            <label for="gender1">Man</label><br>
+            <input type="radio" name="gender" value="Woman">
+            <label for="gender2">Woman</label><br>
+            <input type="radio" name="gender" value="Other">
+            <label for="gender3">Other</label><br><br>
+
+            </div>
+            <input type="submit" class="submit" value="Submit">
+       </form>
+    </main>
+    
+
+    <script src="app2.js"></script>
+</body>
+</html>
