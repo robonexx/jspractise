@@ -18,11 +18,11 @@ submit.addEventListener('click', (e) => {
   let gender = document.querySelector('input[name="gender"]:checked').value;
   console.log('your chosen gender is:', gender);
 
-  if (gender === 'Man') {
+  if (gender === 'Male') {
     men++;
     mensAge += Number(age);
   }
-  if (gender === 'Woman') {
+  if (gender === 'Female') {
     women++;
     womensAge += Number(age);
   }

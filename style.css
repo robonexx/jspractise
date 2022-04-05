@@ -36,6 +36,10 @@ h2 {
     margin: 0.5rem
 }
 
+h4 {
+    text-align: center;
+}
+
 #modal {
     position: absolute;
     left: 50%;
@@ -50,6 +54,7 @@ h2 {
 #modal > h2 {
     text-shadow: 0 4px 4px rgba(0,0,0,0.225);
 }
+
 #modal > form {
     display: flex;
     flex-direction: column;
