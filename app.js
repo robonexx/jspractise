@@ -1,6 +1,7 @@
 console.log('js connected')
 
 const btnScrollToTop = document.querySelector('.btnScrollToTop')
+const btnScrollToBottom = document.querySelector('.btnScrollToBottom')
 const btnReadMore = document.querySelector('.btnReadMore')
 
 let w = window.innerWidth;
@@ -14,7 +15,11 @@ btnScrollToTop.addEventListener('click', () => {
 })
 btnReadMore.addEventListener('click', () => {
     console.log('btn clicked')
-    btnReadMore.style.transform = 'translateY(-3px)'
     const bottomSection = h * 3
     window.scrollBy(0,bottomSection)
+})
+
+btnScrollToBottom.addEventListener('click', () => {
+    console.log('btn clicked')
+    window.scrollTo(0, document.body.scrollHeight || document.documentElement.scrollHeight);
 })

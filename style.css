@@ -24,6 +24,9 @@ main {
     background-color: #888;
     padding: 4rem;
 }
+p {
+    padding: 2rem 0;
+}
 
 h1 {
     text-align: center;
@@ -67,6 +70,7 @@ h2 {
     grid-template-rows: 1fr 2fr 4fr; 
     column-gap: 30px;
     row-gap: 15px;
+    margin-bottom: 5px;
 
 }
 
