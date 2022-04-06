@@ -1,5 +1,5 @@
 let nav = document.querySelector('#navbar')
-console.log('nav js', nav)
+/* console.log('nav js', nav) */
 let prevScrollpos = window.pageYOffset;
 
     window.addEventListener('scroll', function () {
